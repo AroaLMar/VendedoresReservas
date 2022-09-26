@@ -15,8 +15,8 @@ public class concesionario {
 
 
     public static void modificarVendedor(String codven, String nombre, String domicilio, int telefono) {
-        vendedor seller = listarVendedores.get(codven);
-        seller.modificarVendedor(nombre, domicilio, telefono);
+        vendedor vendedor = listarVendedores.get(codven);
+        vendedor.modificarVendedor(nombre, domicilio, telefono);
     }
 
 
