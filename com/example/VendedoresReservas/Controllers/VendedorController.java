@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
         @PutMapping("/api/vendedores/{codven}")
         public void modificarVendedor(@PathVariable String codven, @Valid @RequestBody VendedorUpdate vendedor) {
-           concesionario.modificarVendedor(codven,vendedor.getNombre(),vendedor.getNombre(),vendedor.getTelefono());
+           concesionario.modificarVendedor(codven,vendedor.getNombre(),vendedor.getDomicilio(),vendedor.getTelefono());
         }
 
         @DeleteMapping("/api/vendedores/{codven}")
